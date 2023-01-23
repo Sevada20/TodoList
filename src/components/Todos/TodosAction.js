@@ -1,8 +1,13 @@
+import styles from "./TodoList.module.css";
 function TodoAction({ reset, deleteCompleted }) {
   return (
     <div>
-      <button onClick={reset}>Reset</button>
-      <button onClick={deleteCompleted}>DeleteCompleted</button>
+      <button className={styles.button} onClick={reset}>
+        Reset
+      </button>
+      <button className={styles.button} onClick={deleteCompleted}>
+        DeleteCompleted
+      </button>
     </div>
   );
 }
